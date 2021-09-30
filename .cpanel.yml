@@ -1,0 +1,5 @@
+---
+deployment:
+tasks:
+- export DEPLOYPATH=/home/livq8918/public_html/wp-content/git
+- /bin/cp -r * $DEPLOYPATH
