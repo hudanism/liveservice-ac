@@ -839,6 +839,7 @@ body:not(.is-menu-sidebar) .header-menu-sidebar-inner {
   right: unset !important;
   top: unset !important;
   left: unset !important;
+  background: unset;
   position: relative;
   max-width: 100%;
   box-shadow: none;
@@ -1858,13 +1859,6 @@ pre code {
   --listStyle: disc;
 }
 
-.nv-content-wrap::after,
-.excerpt-wrap::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
 .nv-content-wrap > ul,
 .nv-content-wrap > ol,
 .excerpt-wrap > ul,
@@ -1997,6 +1991,10 @@ audio {
   padding: 60px 15px;
   margin-bottom: 20px;
   flex-grow: 1;
+}
+
+.nv-sidebar-wrap.hide {
+  display: none;
 }
 
 .widget {
@@ -2679,4 +2677,9 @@ audio {
   text-transform: var(--textTransform, var(--bodyTextTransform));
   padding: var(--padding, 0);
   margin: var(--margin, 0);
+}
+
+.inherit-ff {
+  font-family: var(--inheritedFF);
+  font-weight: var(--inheritedFW);
 }
